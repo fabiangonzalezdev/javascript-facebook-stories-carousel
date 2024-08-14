@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel-inner');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-control-prev');
-    const nextButton = document.querySelector('.carousel-control-next');
-    const modal = document.getElementById('modal');
-    const modalImage = document.getElementById('modal-image');
-    const modalVideo = document.getElementById('modal-video');
-    const closeModal = document.querySelector('.close');
-    const modalPrevButton = document.querySelector('.modal-control-prev');
-    const modalNextButton = document.querySelector('.modal-control-next');
+    const carousel = document.querySelector('.carouselNuevo-inner');
+    const carouselItems = document.querySelectorAll('.carouselNuevo-item');
+    const prevButton = document.querySelector('.carouselNuevo-control-prev');
+    const nextButton = document.querySelector('.carouselNuevo-control-next');
+    const modal = document.getElementById('modalNuevo');
+    const modalImage = document.getElementById('modalNuevo-image');
+    const modalVideo = document.getElementById('modalNuevo-video');
+    const closeModal = document.querySelector('.closeNuevo');
+    const modalPrevButton = document.querySelector('.modalNuevo-control-prev');
+    const modalNextButton = document.querySelector('.modalNuevo-control-next');
     let currentIndex = 0;
 
     function updateCarousel() {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const video = item.querySelector('video');
         const img = item.querySelector('img');
-        const loadingContainer = item.querySelector('.loading-container');
+        const loadingContainer = item.querySelector('.loadingNuevo-container');
 
         if (video) {
             video.addEventListener('loadeddata', function() {
@@ -136,4 +136,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     modalPrevButton.addEventListener('click', showPrevItem);
     modalNextButton.addEventListener('click', showNextItem);
-});
+})

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrusel Autogiratorio</title>
-    <link rel="stylesheet" href="src/css/stories-carrousel-styles.css">
+    <link rel="stylesheet" href="assets/css/stories-carrousel-styles.css">
 </head>
 <body>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <div class="loading-container">
-                        <div class="loader"></div>
+    <div class="carouselNuevo-container">
+        <div class="carouselNuevo">
+            <div class="carouselNuevo-inner">
+                <div class="carouselNuevo-item">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <video controls width="213" height="380">
@@ -20,65 +20,65 @@
                         Tu navegador no soporta la reproducción de videos.
                     </video>
                 </div>
-                <div class="carousel-item active"y>
-                    <div class="loading-container">
-                        <div class="loader"></div>
+                <div class="carouselNuevo-item active">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <img src="assets/images/01.jpg" alt="Imagen 1" width="213" height="380">
                 </div>
-                <div class="carousel-item">
-                    <div class="loading-container">
-                        <div class="loader"></div>
+                <div class="carouselNuevo-item">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <img src="assets/images/02.jpg" alt="Imagen 2" width="213" height="380">
                 </div>
-                <div class="carousel-item">
-                    <div class="loading-container">
-                        <div class="loader"></div>
+                <div class="carouselNuevo-item">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <img src="assets/images/03.jpg" alt="Imagen 3" width="213" height="380">
                 </div>
-                <div class="carousel-item">
-                    <div class="loading-container">
-                        <div class="loader"></div>
+                <div class="carouselNuevo-item">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <img src="assets/images/04.jpg" alt="Imagen 4" width="213" height="380">
                 </div>
-                <div class="carousel-item">
-                    <div class="loading-container">
-                        <div class="loader"></div>
+                <div class="carouselNuevo-item">
+                    <div class="loadingNuevo-container">
+                        <div class="loaderNuevo"></div>
                         <span>Cargando</span>
                     </div>
                     <img src="assets/images/05.jpg" alt="Imagen 5" width="213" height="380">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#" role="button">
-                <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+            <a class="carouselNuevo-control-prev" href="#" role="button">
+                <span class="carouselNuevo-control-prev-icon" aria-hidden="true">&lt;</span>
             </a>
-            <a class="carousel-control-next" href="#" role="button">
-                <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
-            </a>
-        </div>
-    </div>
-
-    <div id="modal" class="modal">
-        <div class="modal-content-wrapper">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modal-image">
-            <video class="modal-content" id="modal-video" controls></video>
-            <a class="modal-control-prev" href="#" role="button">
-                <span class="modal-control-prev-icon" aria-hidden="true">&lt;</span>
-            </a>
-            <a class="modal-control-next" href="#" role="button">
-                <span class="modal-control-next-icon" aria-hidden="true">&gt;</span>
+            <a class="carouselNuevo-control-next" href="#" role="button">
+                <span class="carouselNuevo-control-next-icon" aria-hidden="true">&gt;</span>
             </a>
         </div>
     </div>
 
-    <script src="src/js/stories-carrousel-scripts.js"></script>
+    <div id="modalNuevo" class="modalNuevo">
+        <div class="modalNuevo-content-wrapper">
+            <span class="closeNuevo">&times;</span>
+            <img class="modalNuevo-content" id="modalNuevo-image">
+            <video class="modalNuevo-content" id="modalNuevo-video" controls></video>
+            <a class="modalNuevo-control-prev" href="#" role="button">
+                <span class="modalNuevo-control-prev-icon" aria-hidden="true">&lt;</span>
+            </a>
+            <a class="modalNuevo-control-next" href="#" role="button">
+                <span class="modalNuevo-control-next-icon" aria-hidden="true">&gt;</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="assets/js/stories-carrousel-scripts.js"></script>
 </body>
 </html>

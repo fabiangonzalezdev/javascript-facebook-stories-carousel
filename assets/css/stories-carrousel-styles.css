@@ -2,27 +2,27 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.carousel-container {
+.carouselNuevo-container {
     width: 90%;
     margin: auto;
     overflow: hidden;
     position: relative;
 }
 
-.carousel {
+.carouselNuevo {
     display: flex;
     align-items: center;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-inner {
+.carouselNuevo-inner {
     display: flex;
     transition: transform 0.5s ease;
     width: max-content; /* Ensure the carousel is as wide as its content */
 }
 
-.carousel-item {
+.carouselNuevo-item {
     flex: 0 0 auto;
     max-width: 213px;
     height: 380px;
@@ -34,8 +34,8 @@ body {
     cursor: pointer; /* Add cursor pointer to indicate clickability */
 }
 
-.carousel-item img,
-.carousel-item video {
+.carouselNuevo-item img,
+.carouselNuevo-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -43,12 +43,12 @@ body {
     transition: transform 0.5s ease;
 }
 
-.carousel-item:hover img,
-.carousel-item:hover video {
+.carouselNuevo-item:hover img,
+.carouselNuevo-item:hover video {
     transform: scale(1.1);
 }
 
-.carousel-item:hover::before {
+.carouselNuevo-item:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@ body {
     z-index: 1;
 }
 
-.loading-container {
+.loadingNuevo-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -74,7 +74,7 @@ body {
     flex-direction: column;
 }
 
-.loader {
+.loaderNuevo {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #ff0096;
     border-radius: 50%;
@@ -89,13 +89,13 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-.loading-container span {
+.loadingNuevo-container span {
     font-size: 12px;
     color: #ff0096;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carouselNuevo-control-prev,
+.carouselNuevo-control-next {
     position: absolute;
     transform: translateY(-50%);
     background-color: rgba(64, 64, 64, 0.7);
@@ -108,21 +108,21 @@ body {
     text-decoration: none; /* Remove underline */
 }
 
-.carousel-control-prev {
+.carouselNuevo-control-prev {
     left: 0px;
 }
 
-.carousel-control-next {
+.carouselNuevo-control-next {
     right: 0px;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carouselNuevo-control-prev:hover,
+.carouselNuevo-control-next:hover {
     background-color: rgba(64, 64, 64, 1);
     color: white;
 }
 
-.modal {
+.modalNuevo {
     display: none;
     position: fixed;
     z-index: 1;
@@ -137,13 +137,13 @@ body {
     padding-top: 20px;
 }
 
-.modal-content-wrapper {
+.modalNuevo-content-wrapper {
     position: relative;
     padding: 40px; /* Add padding around the content */
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
-.modal-content {
+.modalNuevo-content {
     margin: auto;
     display: block;
     max-height: calc(70% - 80px); /* Adjust max-height to account for padding */
@@ -151,21 +151,21 @@ body {
     border-radius: 10px;
 }
 
-#modal-video {
+#modalNuevo-video {
     display: none;
 }
 
 
 
-.close:hover,
-.close:focus {
+.closeNuevo:hover,
+.closeNuevo:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
-.modal-control-prev,
-.modal-control-next {
+.modalNuevo-control-prev,
+.modalNuevo-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -180,101 +180,8 @@ body {
 }
 
 
-.modal-control-prev:hover,
-.modal-control-next:hover {
+.modalNuevo-control-prev:hover,
+.modalNuevo-control-next:hover {
     background-color: rgba(64, 64, 64, 1);
     color: rgba(192, 192, 192, 1);
-}
-
-@media (max-width: 768px) {
-    .carousel-item {
-        min-width: 50%;
     }
-    .modal-content-wrapper {
-        padding: 40px; /* Add padding around the content */
-    }
-    .modal-content {
-        max-height: calc(70% - 80px); /* Adjust max-height to account for padding */
-        max-width: calc(100% - 80px); /* Adjust max-width to account for padding */
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-item {
-        min-width: 50%;
-    }
-    .modal-content-wrapper {
-        padding: 40px; /* Add padding around the content */
-    }
-
-}
-
-
-
-@media (max-width: 769px) {
-    .carousel-item {
-        min-width: 50%;
-    }
-    .modal-content-wrapper {
-        padding: 40px; /* Add padding around the content */
-    }
-    .modal-content {
-        max-height: calc(70% - 80px); /* Adjust max-height to account for padding */
-        max-width: calc(100% - 80px); /* Adjust max-width to account for padding */
-    }
-    .modal-control-prev {
-        left: 20px;
-    }
-    
-    .modal-control-next {
-        right: 20px;
-    }
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 55px;
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        transition: 0.3s;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        padding: 0px 8px;
-        z-index: 2; /* Asegurar que la X esté por encima del contenido del modal */
-    }
-}
-
-
-@media (min-width: 769px) {
-    .modal-content-wrapper {
-        padding: 0; /* Remove padding for larger screens */
-    }
-    .modal-content {
-        max-height: 70%;
-        max-width: 100%;
-    }
-    .close {
-        position: absolute;
-        top: -25px;
-        right: -25px;
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        transition: 0.3s;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        padding: 0px 8px;
-        z-index: 2; /* Asegurar que la X esté por encima del contenido del modal */
-    }
-
-    .modal-control-prev {
-        left: -30px;
-    }
-    
-    .modal-control-next {
-        right: -30px;
-    }
-    
-}
